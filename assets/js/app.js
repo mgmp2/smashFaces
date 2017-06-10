@@ -31,11 +31,10 @@ const state  = {
 
 
 $(_ => {
-    getJSON('peru.json', (err, json) => {
-        if(err) {
-            return alert(err.message);
-        }
+    getJSON('mexico.json', (err, json) => {
+        if(err) { return alert(err.message); }
         state.coders = json;
+        
         const root = $('.root');
         render(root);
     })

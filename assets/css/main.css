@@ -10,9 +10,33 @@ h1, h2, h3, h4 , h5, h6 {
     font-family: 'Rokkitt', serif;
 }
 
-
+.bg-black {
+    background-color: #333333;
+}
+.btn-orange {
+    background-color: #f9a91a;
+}
+.row div {
+    padding: 14px;
+}
+/*GAME */
+#result .row div:nth-child(2) *{
+    font-weight: normal;
+    color: #fff;
+}
 @media (min-width: 768px) {
     h1 {
         font-size: 50px;
+    }
+}
+@media (min-width: 992px) {
+
+    #result .row div:nth-child(2) {
+        height: 280px;
+        padding: 0 70px;
+        padding-top: 63px;
+    }
+    #result [type="text"] {
+        width: 60%;
     }
 }

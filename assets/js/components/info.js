@@ -4,13 +4,26 @@
 
 
 const PrintCoder = (station, update)  => {
-    const print = $('<section id="coder"></section>');
-    const nam = $('<h3>Hola mundo</h3>');
+    const print     = $('<section id="coder"></section>');
+    const container = $('<div class="container"></div>');
+    const row       = $('<div class="row"></div>');
+    const colImg    = $('<div class="col-xs-12 col-sm-6 col-md-5 text-center"></div>');
+    const img       = $('<h3>Hola mundo</h3>');
+    const colText   = $('<div class="col-xs-12 col-sm-6 col-md-7 bg-black"></div>');
+    const label      = $('<label for="nameCoder">Ingresa su nombre</label>');
+    const input     = $('<input type="text"  class="form-control" placeholder="Nombre" id="nameCoder"><br>');
+    const btn       = $('<button class="btn btn-orange">COMPROBAR</button>')
     // const adrss= $('<h6>'+station.address+'</h6>');
     // const district = $('<h6>'+station.district+'</h6>');
     // const icon = $('<i class="fa fa-map" aria-hidden="true"></i>');
-
-    print.append(nam);
+    colText.append(label);
+    colText.append(input);
+    colText.append(btn);
+    colImg.append(img);
+    row.append(colImg);
+    row.append(colText)
+    container.append(row);
+    print.append(container);
 
 
     // icon.on('click', (e) => {
@@ -30,11 +43,7 @@ const PrintCoder = (station, update)  => {
 const reRender = (getValue, result, update) => {
     result.empty();
     if(getValue.length > 0) {
-
             result.append(PrintCoder(getValue,update));
-    } else {
-        const output = $('<p> No se encontró el destino a buscar...<p>');
-        result.append(output);
     }
 };
 
