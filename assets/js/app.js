@@ -6,7 +6,9 @@ const render = (root) => { //Permite volver a pintar
     wrapper.append(Header( _ => {
         render(root);
     }));
-
+    wrapper.append(Info( _ => {
+        render(root);
+    }));
     // if(state.selectedStation == null ) {
     //     wrapper.append(Search( _ => {
     //         render(root);
@@ -35,6 +37,6 @@ $(_ => {
         }
         state.coders = json;
         const root = $('.root');
-        // render(root);
+        render(root);
     })
 })
