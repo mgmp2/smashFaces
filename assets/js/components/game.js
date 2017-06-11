@@ -1,6 +1,6 @@
 'use strict';
     const PrintCoder = (update)  => {
-    const print     =   $('<div class="container"></div>');
+    const print     =  $('<div class="container"></div>');
     const colImg    = $('<div class="col-xs-12 col-sm-6 col-md-5 text-center"></div>');
     const img       = $('<img src="'+state.selectedPhoto+'" class="img-responsive">');
     const colText   = $('<div class="col-xs-12 col-sm-6 col-md-7 bg-black"></div>');
@@ -18,9 +18,6 @@
     console.log(state.selectedName);
     btn.on('click', (e) => {
         e.preventDefault();
-        // state.selectedName
-
-        // update();
         checkName(state.selectedName, input.val());
         // showMap(state.selectedStation.lat, state.selectedStation.long);
 

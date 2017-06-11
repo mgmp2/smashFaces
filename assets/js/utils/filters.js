@@ -1,5 +1,6 @@
 'use strict';
 
+let point = 0;
 const randomPhoto = (country) => {
     if(country.toLowerCase() == "peru") {
         let numberPeru = Math.floor(Math.random() * (state.codersPeru.length)) ;
@@ -14,12 +15,11 @@ const randomPhoto = (country) => {
     }
 }
 const checkName = (coder, checkCoder) => {
-    let point = 0;
     if (coder.toLowerCase() == checkCoder) {
-        point++;
+        point+=5;
         state.morePoint = point;
     } else {
-        point --;
+        point--;
         state.morePoint = point;
     }
 }

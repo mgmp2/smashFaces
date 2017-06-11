@@ -6,24 +6,14 @@ const render = (root) => { //Permite volver a pintar
     wrapper.append(Header( _ => {
         render(root);
     }));
-    if(state.selectedPhoto == null) {
-        wrapper.append(Info( _ => {
-            render(root);
-        }));
-    } else {
-        // wrapper.append(PrintCoder( _ => {
-        //     render(root);
-        // }));
-    }
-    // if(state.selectedStation == null ) {
-    //     wrapper.append(Info( _ => {
+    wrapper.append(Info( _ => {
+        render(root);
+    }));
+    // if(state.selectedPhoto != null) {
+    //     wrapper.append(PrintCoder( _ => {
     //         render(root);
     //     }));
-    // }
-    // else {
-    //     wrapper.append(Game( _ => {
-    //         render(root);
-    // }));
+    //
     // }
     root.append(wrapper);
 };
