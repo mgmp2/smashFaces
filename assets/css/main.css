@@ -27,15 +27,14 @@ h1, h2, h3, h4 , h5, h6,label {
     margin-bottom: 21px;
 }
 #result .container > div{
-    height: 183px;
-    padding: 0;
-    overflow: hidden;
-
-}
-#result div:nth-child(2) {
-    padding: 0 14px;
+    height: 224px;
+    padding: 0 35px;
     padding-top: 21px;
-    height: 140px
+    overflow: hidden;
+}
+#result .container > div:first-child{
+    padding-right: 0;
+    padding-left: 0;
 }
 #result .container div:nth-child(2) *{
     font-weight: normal;
@@ -50,6 +49,7 @@ h1, h2, h3, h4 , h5, h6,label {
     }
     #result .container > div{
         height: 238px;
+        padding-top: 0;
     }
     #result div:nth-child(2) {
         padding: 0 14px;
@@ -75,8 +75,9 @@ h1, h2, h3, h4 , h5, h6,label {
         padding-right: 0;
     }
     #result .container > div{
-        height: 315px;
+        height: 294px;
     }
+
     #result div:nth-child(2) {
         padding: 0 70px;
         padding-top: 63px;

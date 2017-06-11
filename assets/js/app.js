@@ -10,12 +10,12 @@ const render = (root) => { //Permite volver a pintar
         render(root);
     }));
     // if(state.selectedStation == null ) {
-    //     wrapper.append(Search( _ => {
+    //     wrapper.append(Info( _ => {
     //         render(root);
     //     }));
     // }
     // else {
-    //     wrapper.append(detailsStation( _ => {
+    //     wrapper.append(Game( _ => {
     //         render(root);
     // }));
     // }
