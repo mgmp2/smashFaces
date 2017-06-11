@@ -13,3 +13,13 @@ const randomPhoto = (country) => {
 
     }
 }
+const checkName = (coder, checkCoder) => {
+    let point = 0;
+    if (coder.toLowerCase() == checkCoder) {
+        point++;
+        state.morePoint = point;
+    } else {
+        point --;
+        state.morePoint = point;
+    }
+}

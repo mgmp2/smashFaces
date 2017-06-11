@@ -34,7 +34,8 @@ const state  = {
     codersMexico: null,
     selectedPhoto: null,
     selectedCountry: null,
-    selectedName: null
+    selectedName: null,
+    morePoint: null
 }
 
 
