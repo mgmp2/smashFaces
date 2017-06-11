@@ -9,10 +9,9 @@
 h1, h2, h3, h4 , h5, h6,label {
     font-family: 'Rokkitt', serif;
 }
-i {
-    cursor: pointer;
-    font-size: 35px;
-    color: rgb(105, 51, 218);
+
+hr {
+    display: none;
 }
 .bg-black {
     background-color: #333333;
@@ -24,6 +23,7 @@ i {
 /*INFO*/
 #info select {
     background: #ccc;
+    height: 42px;
 }
 /*GAME */
 #result {
@@ -62,7 +62,8 @@ i {
 }
 @media (min-width: 992px) {
     h1 {
-        font-size: 63px;
+        font-size: 70px;
+        text-align: left!important;
     }
     p,
     label,
@@ -74,6 +75,16 @@ i {
     }
     select {
         font-size: 21px!important;
+    }
+    hr {
+        margin: 0;
+        display: block;
+        width: 35px;
+        border: 2px solid #000;
+    }
+    header {
+        padding-left: 6%;
+
     }
     .row div {
         margin-top: 14px;
