@@ -9,7 +9,11 @@
 h1, h2, h3, h4 , h5, h6,label {
     font-family: 'Rokkitt', serif;
 }
-
+i {
+    cursor: pointer;
+    font-size: 35px;
+    color: rgb(105, 51, 218);
+}
 .bg-black {
     background-color: #333333;
 }
@@ -63,7 +67,8 @@ h1, h2, h3, h4 , h5, h6,label {
     p,
     label,
     strong,
-    input
+    input,
+    span
      {
         font-size: 28px;
     }

@@ -1,12 +1,36 @@
 'use strict';
+const infoPoint = (place, update) => {
+    const colPoint  = $('<div class="col-xs-12"></div>');
+    const nameSede  = $('<span>Sede: '+state.selectedCountry+'</span>');
+    const point     = $('<p>Puntos: </p>');
 
+    const returnInfo    = $('<i>&#60;</i><br>')
+    colPoint.append(returnInfo);
+    colPoint.append(nameSede);
+    colPoint.append(point);
+    returnInfo.on('click', _ => {
+        state.selectedPhoto = 0;
+        reRender(state.selectedPhoto, colPoint.parent().next(), update);
+        reMove("point", colPoint,update);
+    })
+    return colPoint;
+}
 const reRender = (photo, result, update) => {
+    console.log(result);
     result.empty();
     if(photo.length > 0) {
             result.append(PrintCoder(photo,update));
     }
 };
+const reMove = (item, place, update) => {
+    place.empty();
+    if(item == "info") {
+        place.append(infoPoint(update));
+    } else {
+        place.append(Info(update));
 
+    }
+}
 const Info = (update) => {
     const section = $('<section></section');
     const container = $('<div class="container"></div>');
@@ -34,6 +58,7 @@ const Info = (update) => {
         if($(this).val()) {
             state.selectedCountry = $(this).val();
             state.selectedPhoto = randomPhoto(state.selectedCountry);
+            reMove("info", row, update);
             reRender(state.selectedPhoto, result, update);
         }
     })

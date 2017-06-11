@@ -1,5 +1,5 @@
 'use strict';
-    const PrintCoder = (photo, update)  => {
+    const PrintCoder = (update)  => {
     const print     =   $('<div class="container"></div>');
     const colImg    = $('<div class="col-xs-12 col-sm-6 col-md-5 text-center"></div>');
     const img       = $('<img src="'+state.selectedPhoto+'" class="img-responsive">');
@@ -19,7 +19,7 @@
         e.preventDefault();
         // state.selectedName
         update();
-        showMap(state.selectedStation.lat, state.selectedStation.long);
+        // showMap(state.selectedStation.lat, state.selectedStation.long);
 
 
     })
