@@ -15,13 +15,13 @@
     print.append(colImg);
     print.append(colText)
 
+    btn.on('click', (e) => {
+        e.preventDefault();
+        // state.selectedName
+        update();
+        showMap(state.selectedStation.lat, state.selectedStation.long);
 
-    // icon.on('click', (e) => {
-    //     e.preventDefault();
-    //     update();
-    //     showMap(state.selectedStation.lat, state.selectedStation.long);
-    //
-    //
-    // })
+
+    })
     return print;
 }

@@ -28,7 +28,7 @@ const state  = {
     codersMexico: null,
     selectedPhoto: null,
     selectedCountry: null,
-    selectName: null
+    selectedName: null
 }
 
 
@@ -37,15 +37,12 @@ $(_ => {
     getJSON('peru.json', (err, json) => {
         if(err) { return alert(err.message); }
         state.codersPeru = json;
-        console.log("Peruana: "+state.codersPeru[3].name);
-        console.log("state.codersPeru[3].name ");
         const root = $('.root');
         render(root);
     })
     getJSON('mexico.json', (err, json) => {
         if(err) { return alert(err.message); }
         state.codersMexico = json;
-        console.log("Mexicana: "+state.codersMexico[3].name);
         const root = $('.root');
         render(root);
     })

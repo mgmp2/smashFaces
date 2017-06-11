@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-h1, h2, h3, h4 , h5, h6 {
+h1, h2, h3, h4 , h5, h6,label {
     font-family: 'Rokkitt', serif;
 }
 
@@ -29,6 +29,8 @@ h1, h2, h3, h4 , h5, h6 {
 #result .container > div{
     height: 183px;
     padding: 0;
+    overflow: hidden;
+
 }
 #result div:nth-child(2) {
     padding: 0 14px;
@@ -44,24 +46,42 @@ h1, h2, h3, h4 , h5, h6 {
 }
 @media (min-width: 768px) {
     h1 {
-        font-size: 50px;
+        font-size: 42px;
+    }
+    #result .container > div{
+        height: 238px;
+    }
+    #result div:nth-child(2) {
+        padding: 0 14px;
+        padding-top: 21px;
     }
 }
 @media (min-width: 992px) {
+    h1 {
+        font-size: 63px;
+    }
+    p,
+    label,
+    strong,
+    input
+     {
+        font-size: 28px;
+    }
+    select {
+        font-size: 21px!important;
+    }
     .row div {
         margin-top: 14px;
         padding-right: 0;
     }
     #result .container > div{
-        height: 308px;
-        overflow: hidden;
+        height: 315px;
     }
     #result div:nth-child(2) {
         padding: 0 70px;
         padding-top: 63px;
     }
-    #result [type="text"] {
-        width: 60%;
-
+    #result button {
+        margin-left: 35%;
     }
 }
