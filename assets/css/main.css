@@ -16,13 +16,31 @@ h1, h2, h3, h4 , h5, h6 {
 .btn-orange {
     background-color: #f9a91a;
 }
-.row div {
-    padding: 14px;
+
+/*INFO*/
+#info select {
+    background: #ccc;
 }
 /*GAME */
-#result .row div:nth-child(2) *{
+#result {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+#result .container > div{
+    height: 183px;
+    padding: 0;
+}
+#result div:nth-child(2) {
+    padding: 0 14px;
+    padding-top: 21px;
+    height: 140px
+}
+#result .container div:nth-child(2) *{
     font-weight: normal;
     color: #fff;
+}
+#result .container div:nth-child(2) [type="text"] {
+    color: #000;
 }
 @media (min-width: 768px) {
     h1 {
@@ -30,13 +48,20 @@ h1, h2, h3, h4 , h5, h6 {
     }
 }
 @media (min-width: 992px) {
-
-    #result .row div:nth-child(2) {
-        height: 280px;
+    .row div {
+        margin-top: 14px;
+        padding-right: 0;
+    }
+    #result .container > div{
+        height: 308px;
+        overflow: hidden;
+    }
+    #result div:nth-child(2) {
         padding: 0 70px;
         padding-top: 63px;
     }
     #result [type="text"] {
         width: 60%;
+
     }
 }

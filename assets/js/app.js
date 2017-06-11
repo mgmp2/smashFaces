@@ -24,17 +24,28 @@ const render = (root) => { //Permite volver a pintar
 
 // MY OBJECT
 const state  = {
-    coders: null,
-    selectedCoder: null
+    codersPeru: null,
+    codersMexico: null,
+    selectedPhoto: null,
+    selectedCountry: null,
+    selectName: null
 }
 
 
 
 $(_ => {
+    getJSON('peru.json', (err, json) => {
+        if(err) { return alert(err.message); }
+        state.codersPeru = json;
+        console.log("Peruana: "+state.codersPeru[3].name);
+        console.log("state.codersPeru[3].name ");
+        const root = $('.root');
+        render(root);
+    })
     getJSON('mexico.json', (err, json) => {
         if(err) { return alert(err.message); }
-        state.coders = json;
-        
+        state.codersMexico = json;
+        console.log("Mexicana: "+state.codersMexico[3].name);
         const root = $('.root');
         render(root);
     })
