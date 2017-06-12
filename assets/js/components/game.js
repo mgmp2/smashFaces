@@ -18,7 +18,6 @@
     print.append(colImg);
     print.append(colText)
 
-    console.log(state.selectedName);
     btn.on('click', (e) => {
         e.preventDefault();
         checkName(state.selectedName, input);

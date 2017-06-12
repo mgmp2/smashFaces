@@ -36,8 +36,7 @@ const checkName = (coder, checkCoder) => {
             $('#result button').next().empty();
             countTry = 0;
             setTimeout( _ =>{
-                $('#result img').attr("src", randomPhoto(state.selectedCountry))
-                console.(state.selectedName);
+                $('#result img').attr("src", randomPhoto(state.selectedCountry));
 
             }, 500);
         }

@@ -11,7 +11,6 @@ const infoPoint = ( update) => {
     return colPoint;
 }
 const reRender = (photo, result, update) => {
-    console.log(result);
     result.empty();
     if(photo.length > 0) {
             result.append(PrintCoder(photo,update));
