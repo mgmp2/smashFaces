@@ -25,7 +25,8 @@ const state  = {
     selectedPhoto: null,
     selectedCountry: null,
     selectedName: null,
-    morePoint: null
+    morePoint: 0,
+    try: 0
 }
 
 

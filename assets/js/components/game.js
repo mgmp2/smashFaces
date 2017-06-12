@@ -18,9 +18,7 @@
     console.log(state.selectedName);
     btn.on('click', (e) => {
         e.preventDefault();
-        checkName(state.selectedName, input.val());
-        // showMap(state.selectedStation.lat, state.selectedStation.long);
-
+        checkName(state.selectedName, input);
 
     })
     return print;

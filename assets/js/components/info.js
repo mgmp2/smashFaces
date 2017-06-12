@@ -44,6 +44,8 @@ const Info = (update) => {
         // Llamar a otro funcion
         if($(this).val()) {
             state.selectedCountry = $(this).val();
+            state.try = 0 ;
+            state.morePoint = 0;
             state.selectedPhoto = randomPhoto(state.selectedCountry);
             reMove( row, update);
             reRender(state.selectedPhoto, result, update);
