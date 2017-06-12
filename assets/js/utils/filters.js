@@ -19,35 +19,38 @@ const checkName = (coder, checkCoder) => {
     if (coder.toLowerCase() == checkCoder.val().toLowerCase()) {
         point+=5;
         state.morePoint = point;
+        countTry = 0;
         $('#info p').text('Puntos: '+state.morePoint+' puntos');
-        state.try = 0;
         setTimeout( _ =>{
             $('#result img').attr("src", randomPhoto(state.selectedCountry))
             console.log(state.selectedName);
 
-            }, 2000);
+        }, 500);
     } else {
         countTry++;
-        if(state.try >= 5) {
+        if(countTry >= 5) {
             point--;
             state.morePoint = point;
             $('#info p').text('Puntos: '+state.morePoint+' puntos');
-                state.try = 0;
+                countTry = 0;
                 setTimeout( _ =>{
                     $('#result img').attr("src", randomPhoto(state.selectedCountry))
                     console.log(state.selectedName);
 
-                    }, 2000);
+                }, 500);
         }
-        state.try= countTry;
+
 
     }
+    state.try= countTry;
+
     updateData(checkCoder);
 }
 
 const updateData = (name) => {
     name.val("");
     name.focus();
+    $('#info strong').text('Intento: '+state.try+' de 5 intentos');
     if (state.morePoint  < 0) {
         $('#info p').text('Perdiste');
         $('#result img').attr("src", "")
@@ -55,6 +58,6 @@ const updateData = (name) => {
         setTimeout( _ =>{
             render($('.root'));
 
-            }, 3000);
+        }, 500);
     }
 }

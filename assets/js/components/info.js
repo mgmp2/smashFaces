@@ -3,8 +3,11 @@ const infoPoint = ( update) => {
     const colPoint  = $('<div class="col-xs-12"></div>');
     const nameSede  = $('<span>Sede: '+state.selectedCountry+'</span>');
     const point     = $('<p>Puntos: '+state.morePoint+' puntos</p>');
+    const intento     = $('<strong>Intento: '+state.try+' de 5 intentos</strong>');
+
     colPoint.append(nameSede);
     colPoint.append(point);
+    colPoint.append(intento);
     return colPoint;
 }
 const reRender = (photo, result, update) => {
