@@ -6,11 +6,14 @@
     const colText   = $('<div class="col-xs-12 col-sm-6 col-md-7 bg-black"></div>');
     const label      = $('<label for="nameCoder">Ingresa su nombre</label>');
     const input     = $('<input type="text" class="form-control" placeholder="Nombre" id="nameCoder"><br>');
-    const btn       = $('<button class="btn btn-orange">COMPROBAR</button>')
+    const btn       = $('<button class="btn btn-orange">COMPROBAR</button>');
+    const texto     = $('<p></p>');
 
     colText.append(label);
     colText.append(input);
     colText.append(btn);
+    colText.append(texto);
+
     colImg.append(img);
     print.append(colImg);
     print.append(colText)
