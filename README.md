@@ -14,20 +14,20 @@ Ayudar al salón de clases a que se conozcan de una más fácil y divertida.
 
 ## Requisitos
 
-	+ El programa está divido en cabecera y en el juego.
-	+ Se debe elegir una sede 
-	+ Se debe mostrar una imagen al azar
-	+ 5 intentos máximo
-	+ Mostrar mensaje según la condición: "Sigue intentando" ó "Excelente acertaste"
+	- El programa está divido en cabecera y en el juego.
+	- Se debe elegir una sede 
+	- Se debe mostrar una imagen al azar
+	- 5 intentos máximo
+	- Mostrar mensaje según la condición: "Sigue intentando" ó "Excelente acertaste"
 	
 	
 ## Herramientas Utilizadas
 
-	+ Framework Bootstrap
-	+ jQuery librería
-	+ AJAX
-	+ CSS
-	+ HTML
+	- Framework Bootstrap
+	- jQuery librería
+	- AJAX
+	- CSS
+	- HTML
 
 `Nota`: El proyecto puede ver en demo  [aquí](https://mgmp2.github.io/smashFaces/).
 	
