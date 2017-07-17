@@ -9,7 +9,7 @@ El juego consiste en adivinar los nombres de tus compañeras de clase para lo cu
 
 ## Objetivo
 
-Ayudar al salón de clases a que se conozcan de una más fácil y divertida.
+Ayudar al salón de clases a que se conozcan de una manera más fácil y divertida.
 
 
 ## Requisitos
